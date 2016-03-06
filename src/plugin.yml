@@ -1,0 +1,25 @@
+name: TPSRestart
+main: com.harry9137.tpsrestart.TPSRestart
+version: 0.1
+description: A custom plugin for Ineffable Servers to restart the server if the TPS is below a certain threshold.
+author: Harry9137
+website: https://github.com/SomeRandomPerson9/TPSAutoRestart
+commands:
+   SetTimeToRestart:
+       description: Used to set the time it will take at the MinTPS for the server to restart.
+       usage: /SetTimeToRestart [minutes]
+       permission: tpsrestart.commands.SetTimeToRestart
+       permission-message: You don't have permission to use this command. Please contact an admin for more information.
+   tps:
+       description: Gives the current overall TPS of the server
+       usage: /tps
+   StartRestartVote:
+       description: Used to start a restart vote
+       usage: /StartRestartVote
+   RestartVote:
+       description: Vote for the server to restart
+       usage: /RestartVote
+permissions:
+    tpsrestart.commands.SetTimeToRestart:
+        description: Gives access setting the time it will take at the MinTPS to restart
+        default: op
