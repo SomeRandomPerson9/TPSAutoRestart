@@ -13,13 +13,31 @@ commands:
    tps:
        description: Gives the current overall TPS of the server
        usage: /tps
+       permission: tpsrestart.commands.debug
+       permission-message: You don't have permission to use this command. Please contact an admin for more information.
    StartRestartVote:
        description: Used to start a restart vote
        usage: /StartRestartVote
    RestartVote:
        description: Vote for the server to restart
        usage: /RestartVote
+   TpsStopRestart:
+       description: Stops the Restart Server task
+       usage: /TpsStopRestart
+   TPSDebug:
+       description: Give the debug information for the config file
+       usage: /TPSDebug
+       permission: tpsrestart.commands.debug
+       permission-message: You don't have permission to use this command. Please contact an admin for more information.
+   ForceTPSCheck:
+       description: Forces the server to check the TPS
+       usage: /ForceTPSCheck
+       permission: tpsrestart.commands.debug
+       permission-message: You don't have permission to use this command. Please contact an admin for more information.
 permissions:
     tpsrestart.commands.SetTimeToRestart:
         description: Gives access setting the time it will take at the MinTPS to restart
+        default: op
+    tpsrestart.commands.debug:
+        description: Gives access to all of the commands for debugging TPSRestart
         default: op

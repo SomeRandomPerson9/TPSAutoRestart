@@ -1,10 +1,10 @@
 # Default Config File
 
 #The amount of time at the minimum TPS that will cause the server to restart the server will restart (Minutes)
-TimeToRestart:10
+TimeToRestart: 10
 
 #If the server is under this TPS for the time specified above, the server will restart
-MinTPS:10
+MinTPS: 10
 
 #Every time this interval of time is reached, the server will check the TPS.
-CheckInterval:5
+CheckInterval: 5
